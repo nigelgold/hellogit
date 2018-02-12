@@ -1,6 +1,12 @@
 //groceries.cpp
 #include "groceries.h"
 
+
+groceries::groceries ()
+{
+item= " ";
+price=0.0 ;
+}
 groceries::groceries (string product, float cost)
 {
 item= product;
@@ -10,7 +16,7 @@ price= cost;
 	{
 		item= product;
 	}
-string groceries:: getgroceryNAme()
+string groceries:: getgroceryName()
 	{
 	 return item;
 	}

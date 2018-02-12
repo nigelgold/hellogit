@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "groceries.h" 
 using namespace std;
 
 int main()
@@ -13,16 +14,18 @@ vector<groceries>myvector;
 
 for (int c=0; c<3; c++)
 {
-cout << "Please enter name or product";
+cout << "Please enter name and price";
 cin >> name;
 cin >> dues;
+stock.setgroceryName(name);
+stock.setgroceryPrice(dues);
 myvector.push_back (stock);
 }
-	for (int x=0; x< myvector.size(); x==)
+	for (int x=0; x< myvector.size(); x++)
 	{
-	 cout << myvector[i].getgroceryName() << " " << myvector[i].getgroceryPrice() << endl;
+	 cout << myvector[x].getgroceryName() << " " << myvector[x].getgroceryPrice() << endl;
 	}
-		cout << "Above arethe 4 products and prices";
+		cout << "Above are the 4 products and prices";
 return 0;
 }
 
